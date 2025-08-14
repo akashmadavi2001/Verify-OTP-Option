@@ -10,12 +10,12 @@ inputs.forEach((input,index)=>{
         if(currentInput.value.length>1){
             currentInput.value ='';
             return;
-        }
+        };
 
         if(nextInput && nextInput.hasAttribute('disabled')&& currentInput.value!==""){
             nextInput.removeAttribute('disabled');
             nextInput.focus();
-        }
+        };
 
         if(e.key ==="Backspace"){
             inputs.forEach((input,index2)=>{
@@ -23,15 +23,16 @@ inputs.forEach((input,index)=>{
                     input.setAttribute('disabled', true);
                     currentInput.value ="";
                     prevInput.focus();
-                }
+                };
             });
-        }
+        };
 
         if(!inputs[3].disabled && inputs[3].value !== ""){
             btn.classList.add("active");
             return;
-        }
+        };
         btn.classList.remove("active");
     })
 })
+
 window.addEventListener('load',()=> inputs[0].focus());
