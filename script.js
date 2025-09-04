@@ -32,7 +32,7 @@ inputs.forEach((input,index)=>{
             return;
         };
         btn.classList.remove("active");
-    })
-})
+    });
+});
 
 window.addEventListener('load',()=> inputs[0].focus());
