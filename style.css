@@ -56,7 +56,7 @@ body {
 }
 
 .container button:hover,
-button.active {
+.container button.active {
     background-color: #006eff;
 }
 
